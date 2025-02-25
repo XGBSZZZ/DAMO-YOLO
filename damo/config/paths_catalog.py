@@ -27,6 +27,14 @@ class DatasetCatalog(object):
             'img_dir': '/home/tfw/yolo/damo-yolo/datasets/Train_diff_shadow',
             'ann_file': '/home/tfw/yolo/damo-yolo/datasets/cocozzz/val.json'
         },
+        'sample_train_cross_hair': {
+            'img_dir': '/home/tfw/yolo/damo-yolo/datasets/cross_hair/train',
+            'ann_file': '/home/tfw/yolo/damo-yolo/datasets/cross_hair/datasetcoco/train.json'
+        },
+        'sample_test_cross_hair': {
+            'img_dir': '/home/tfw/yolo/damo-yolo/datasets/cross_hair/val',
+            'ann_file': '/home/tfw/yolo/damo-yolo/datasets/cross_hair/datasetcoco/val.json'
+        },
         }
 
     @staticmethod
