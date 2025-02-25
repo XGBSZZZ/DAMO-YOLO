@@ -24,7 +24,7 @@ def make_parser():
     parser = argparse.ArgumentParser('damo eval')
 
     # distributed
-    parser.add_argument('--local_rank', type=int, default=0)
+    parser.add_argument('--local-rank', type=int, default=0)
     parser.add_argument(
         '-f',
         '--config_file',

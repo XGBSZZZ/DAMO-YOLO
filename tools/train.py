@@ -28,7 +28,7 @@ def make_parser():
         type=str,
         help='plz input your config file',
     )
-    parser.add_argument('--local_rank', type=int, default=0)
+    parser.add_argument('--local-rank', type=int, default=0)
     parser.add_argument('--tea_config', type=str, default=None)
     parser.add_argument('--tea_ckpt', type=str, default=None)
     parser.add_argument(
@@ -45,8 +45,21 @@ def main():
     args = make_parser().parse_args()
 
     torch.cuda.set_device(args.local_rank)
-    torch.distributed.init_process_group(backend='nccl', init_method='env://')
+    import torch.distributed as dist
+    print(dist.is_available())
+
+    # dist.init_process_group(
+    #     backend='gloo',
+    #     init_method='localhost',
+    #     rank=0,
+    #     world_size=1
+    # )
+
+    torch.distributed.init_process_group(backend='nccl', init_method='env://', rank=0,)
     synchronize()
+
+    print("分布式初始化成功！")
+
     if args.tea_config is not None:
         tea_config = parse_config(args.tea_config)
     else:
@@ -54,7 +67,6 @@ def main():
 
     config = parse_config(args.config_file)
     config.merge(args.opts)
-
 
     trainer = Trainer(config, args, tea_config)
     trainer.train(args.local_rank)

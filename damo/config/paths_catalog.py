@@ -19,6 +19,14 @@ class DatasetCatalog(object):
             'img_dir': 'coco/test2017',
             'ann_file': 'coco/annotations/image_info_test-dev2017.json'
         },
+        'sample_train_coco': {
+            'img_dir': '/home/tfw/yolo/damo-yolo/datasets/Train_diff_shadow',
+            'ann_file': '/home/tfw/yolo/damo-yolo/datasets/cocozzz/val.json'
+        },
+        'sample_test_coco': {
+            'img_dir': '/home/tfw/yolo/damo-yolo/datasets/Train_diff_shadow',
+            'ann_file': '/home/tfw/yolo/damo-yolo/datasets/cocozzz/val.json'
+        },
         }
 
     @staticmethod
