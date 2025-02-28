@@ -1,2 +1,8 @@
 export PYTHONPATH=$PWD:$PYTHONPATH
 python tools/converter.py -f configs/damoyolo_tinynasL18_Ns_cross_hair.py -c workdirs/damoyolo_tinynasL18_Ns_cross_hair/latest_ckpt.pth --batch_size 1 --img_size 1280
+
+python -m torch.distributed.launch --nproc_per_node=1 tools/train.py -f configs/damoyolo_tinynasL18_Ns_ch.py
+python tools/converter.py -f configs/damoyolo_tinynasL18_Ns_cross_hair.py -c workdirs/damoyolo_tinynasL18_Ns_ch/latest_ckpt.pth --batch_size 1 --img_size 640
+
+python -m torch.distributed.launch --nproc_per_node=1 tools/train.py -f configs/damoyolo_tinynasL18_Ns_guns.py
+python tools/converter.py -f configs/damoyolo_tinynasL18_Ns_cross_hair.py -c workdirs/damoyolo_tinynasL18_Ns_guns/latest_ckpt.pth --batch_size 1 --img_size 640
