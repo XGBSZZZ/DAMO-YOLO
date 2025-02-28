@@ -35,6 +35,22 @@ class DatasetCatalog(object):
             'img_dir': '/home/tfw/yolo/damo-yolo/datasets/images',
             'ann_file': '/home/tfw/yolo/damo-yolo/datasets/cocozzz/val.json'
         },
+        'coco_ch_train': {
+            'img_dir': '/home/tfw/yolo/damo-yolo/datasets/cross_hair/cross_hair_train',
+            'ann_file': '/home/tfw/yolo/damo-yolo/datasets/cross_hair/coco/cross_hair_train.json'
+        },
+        'coco_ch_val': {
+            'img_dir': '/home/tfw/yolo/damo-yolo/datasets/cross_hair/cross_hair_val',
+            'ann_file': '/home/tfw/yolo/damo-yolo/datasets/cross_hair/coco/cross_hair_val.json'
+        },
+        'coco_guns_train': {
+            'img_dir': '/home/tfw/yolo/damo-yolo/datasets/cross_hair/guns_train',
+            'ann_file': '/home/tfw/yolo/damo-yolo/datasets/cross_hair/coco/guns_train.json'
+        },
+        'coco_guns_val': {
+            'img_dir': '/home/tfw/yolo/damo-yolo/datasets/cross_hair/guns_train',
+            'ann_file': '/home/tfw/yolo/damo-yolo/datasets/cross_hair/coco/guns_train.json'
+        },
         }
 
     @staticmethod

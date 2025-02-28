@@ -1,0 +1,2 @@
+export PYTHONPATH=$PWD:$PYTHONPATH
+python tools/converter.py -f configs/damoyolo_tinynasL18_Ns_cross_hair.py -c workdirs/damoyolo_tinynasL18_Ns_cross_hair/latest_ckpt.pth --batch_size 1 --img_size 1280
