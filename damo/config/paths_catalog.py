@@ -48,8 +48,8 @@ class DatasetCatalog(object):
             'ann_file': '/home/tfw/yolo/damo-yolo/datasets/cross_hair/coco/guns_train.json'
         },
         'coco_guns_val': {
-            'img_dir': '/home/tfw/yolo/damo-yolo/datasets/cross_hair/guns_train',
-            'ann_file': '/home/tfw/yolo/damo-yolo/datasets/cross_hair/coco/guns_train.json'
+            'img_dir': '/home/tfw/yolo/damo-yolo/datasets/cross_hair/guns_val',
+            'ann_file': '/home/tfw/yolo/damo-yolo/datasets/cross_hair/coco/guns_val.json'
         },
         }
 
