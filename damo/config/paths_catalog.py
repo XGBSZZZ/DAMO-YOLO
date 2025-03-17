@@ -27,13 +27,13 @@ class DatasetCatalog(object):
             'img_dir': '/home/tfw/yolo/damo-yolo/datasets/Train_diff_shadow',
             'ann_file': '/home/tfw/yolo/damo-yolo/datasets/cocozzz/val2.json'
         },
-        'sample_train_cross_hair_coco': {
-            'img_dir': '/home/tfw/yolo/damo-yolo/datasets/images',
-            'ann_file': '/home/tfw/yolo/damo-yolo/datasets/cocozzz/train.json'
+        'coco_train_cross_hair': {
+            'img_dir': '/home/tfw/yolo/damo-yolo/datasets/new_cross_hair/cross_hair_train',
+            'ann_file': '/home/tfw/yolo/damo-yolo/datasets/new_cross_hair/coco/cross_hair_train.json'
         },
-        'sample_test_cross_hair_coco': {
-            'img_dir': '/home/tfw/yolo/damo-yolo/datasets/images',
-            'ann_file': '/home/tfw/yolo/damo-yolo/datasets/cocozzz/val.json'
+        'coco_val_cross_hair': {
+            'img_dir': '/home/tfw/yolo/damo-yolo/datasets/new_cross_hair/cross_hair_val',
+            'ann_file': '/home/tfw/yolo/damo-yolo/datasets/new_cross_hair/coco/cross_hair_val.json'
         },
         'coco_ch_train': {
             'img_dir': '/home/tfw/yolo/damo-yolo/datasets/cross_hair/cross_hair_train',
